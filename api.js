@@ -19,7 +19,7 @@ fetch("https://api.openweathermap.org/data/2.5/weather?lat=39.95&lon=4.11&appid=
 .then(response => response.json())
 .then(data => {
 document.getElementById("Temperatura-Ibiza").textContent = Math.round(data.main.temp);
-document.getElementById("Humedad1-Ibiza").textContent = Math.round(data.main.humidity);
+document.getElementById("Humedad-Ibiza").textContent = Math.round(data.main.humidity);
 })
 
 
